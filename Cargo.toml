@@ -1,14 +1,9 @@
-[package]
-name = "xdiff"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+members = [
+    "requester",
+    "cli-utils",
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-anyhow = "1.0.66"
-clap = { version = "4.0.18", features = ["derive"] }
-reqwest = "0.11.12"
-serde_yaml = "0.9.14"
-similar = "2.2.0"
-tokio = "1.21.2"
+    # cli
+    "xdiff",
+    "xreq",
+]
